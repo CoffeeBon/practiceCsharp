@@ -1,0 +1,10 @@
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\bin\Debug\CuteCat.exe.config
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\bin\Debug\CuteCat.exe
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\bin\Debug\CuteCat.pdb
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.csprojResolveAssemblyReference.cache
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.Properties.Resources.resources
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.csproj.GenerateResource.Cache
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.csproj.CoreCompileInputs.cache
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.exe
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.pdb
+C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.Form1.resources

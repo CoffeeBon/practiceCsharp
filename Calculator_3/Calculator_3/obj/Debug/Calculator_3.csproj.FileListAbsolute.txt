@@ -1,0 +1,10 @@
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.csprojResolveAssemblyReference.cache
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.Calculator.resources
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.Properties.Resources.resources
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.csproj.GenerateResource.Cache
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\bin\Debug\Calculator_3.exe.config
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\bin\Debug\Calculator_3.exe
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\bin\Debug\Calculator_3.pdb
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.exe
+c:\users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.pdb
+C:\Users\blue3\documents\visual studio 2017\Projects\Calculator_3\Calculator_3\obj\Debug\Calculator_3.csproj.CoreCompileInputs.cache
