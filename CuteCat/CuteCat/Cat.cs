@@ -8,13 +8,15 @@ namespace CuteCat
 {
     public class Cat
     {
+
         public string Name;
         public int Age;
-        
         private int Happiness = 50;
 
-        //생성자는 무조건 public... 외부에서 호출용이기 때문에
+        ///
+        ///생성자는 무조건 public... 외부에서 호출용이기 때문에
         //생성자는 return type이 없다(void, int... 등 아예 없다)
+
         public Cat(string name, int age)
         {
             this.Name = name;
@@ -22,7 +24,7 @@ namespace CuteCat
         }
         //this는 그 클래스의 현재 인스턴스를 말한다.
         //Cat이라는 클래스에 생성자를 만들면 그 순간 인스턴스화 된다.
-        //그 인스턴스 자체가 this라는 키워드.1111
+        //그 인스턴스 자체가 this라는 키워드.
         
         public void GetBored()
         {
@@ -32,6 +34,7 @@ namespace CuteCat
                 Happiness = 0;
             }
         }
+
         public void Play()
         {
             Happiness = Happiness + 10;
@@ -41,6 +44,7 @@ namespace CuteCat
                 Happiness = 100;
             }
         }
+
         public void Eat()
         {
             Happiness = Happiness + 50;
@@ -50,6 +54,7 @@ namespace CuteCat
                 Happiness = 100;
             }
         }
+
         public string Express()
         {
             string message = "";
@@ -75,7 +80,7 @@ namespace CuteCat
                 message = "I'm sad.";
             }
 
-            return this.Name + ": " + message;
+            return $"{ this.Name} :  { message}";
         }
     }
 }

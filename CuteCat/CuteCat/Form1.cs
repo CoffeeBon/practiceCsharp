@@ -12,10 +12,11 @@ namespace CuteCat
 {
     public partial class Form1 : Form
     {
-
-        /*클래스에 아무런 생성자가 없을 때
-         * public Cat(){ }
-         * 가 자동적으로 생성된다. */
+        /// <summary>
+        /// 클래스에 아무런 생성자가 없을 때
+        /// public Cat() { } 가 자동적으로 생성된다.
+        /// </summary>
+        
         private Cat MyCat = new Cat("Lucas", 1);
 
 
@@ -23,7 +24,7 @@ namespace CuteCat
         {
             InitializeComponent();
         }
-
+        
         private void Play_Click(object sender, EventArgs e)
         {
             MyCat.Play();

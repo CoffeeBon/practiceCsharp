@@ -8,3 +8,13 @@ C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\C
 C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.exe
 C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.pdb
 C:\Users\blue3\Documents\Visual Studio 2017\Projects\CuteCat\CuteCat\obj\Debug\CuteCat.Form1.resources
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\bin\Debug\CuteCat.exe.config
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\bin\Debug\CuteCat.exe
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\bin\Debug\CuteCat.pdb
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.csprojResolveAssemblyReference.cache
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.Form1.resources
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.Properties.Resources.resources
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.csproj.GenerateResource.Cache
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.csproj.CoreCompileInputs.cache
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.exe
+D:\00_Repository\PracticeCsharp\CuteCat\CuteCat\obj\Debug\CuteCat.pdb
