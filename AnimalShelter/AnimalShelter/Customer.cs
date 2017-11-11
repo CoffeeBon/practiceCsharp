@@ -71,7 +71,11 @@ namespace AnimalShelter
         public bool IsQualified => _IsQualified;
         //
         // get 속성으로 성과 이름을 붙임
-        public string FullName => $"{FirstName} {LastName}";
+        public string FullName
+        {
+            get { return $"{FirstName} {LastName}"; }
+        }
+
         //
         // _Age 대신 Birthday 속성(DateTime type)으로 속성 생성
         public DateTime Birthday

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.CreateCustomer = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.CusDetailPanel = new System.Windows.Forms.Panel();
             this.CusIsQualified = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@
             this.CusFullName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.CusNewPanel = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,13 +51,14 @@
             this.CusNewBirthday = new System.Windows.Forms.TextBox();
             this.CusNewAddress = new System.Windows.Forms.TextBox();
             this.CusNewDescription = new System.Windows.Forms.TextBox();
+            this.CustomerList = new System.Windows.Forms.ListBox();
             this.CusDetailPanel.SuspendLayout();
             this.CusNewPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // CreateCustomer
             // 
-            this.CreateCustomer.Location = new System.Drawing.Point(241, 50);
+            this.CreateCustomer.Location = new System.Drawing.Point(86, 437);
             this.CreateCustomer.Name = "CreateCustomer";
             this.CreateCustomer.Size = new System.Drawing.Size(151, 47);
             this.CreateCustomer.TabIndex = 0;
@@ -67,19 +66,9 @@
             this.CreateCustomer.UseVisualStyleBackColor = true;
             this.CreateCustomer.Click += new System.EventHandler(this.CreateCustomer_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(61, 526);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // CusDetailPanel
             // 
             this.CusDetailPanel.Controls.Add(this.CusIsQualified);
-            this.CusDetailPanel.Controls.Add(this.button1);
             this.CusDetailPanel.Controls.Add(this.label2);
             this.CusDetailPanel.Controls.Add(this.CusDescription);
             this.CusDetailPanel.Controls.Add(this.label6);
@@ -89,9 +78,9 @@
             this.CusDetailPanel.Controls.Add(this.label4);
             this.CusDetailPanel.Controls.Add(this.CusFullName);
             this.CusDetailPanel.Controls.Add(this.label3);
-            this.CusDetailPanel.Location = new System.Drawing.Point(493, 12);
+            this.CusDetailPanel.Location = new System.Drawing.Point(721, 12);
             this.CusDetailPanel.Name = "CusDetailPanel";
-            this.CusDetailPanel.Size = new System.Drawing.Size(533, 566);
+            this.CusDetailPanel.Size = new System.Drawing.Size(305, 566);
             this.CusDetailPanel.TabIndex = 2;
             // 
             // CusIsQualified
@@ -218,24 +207,14 @@
             this.CusNewPanel.Controls.Add(this.CusNewFirstName);
             this.CusNewPanel.Controls.Add(this.CusNewLastName);
             this.CusNewPanel.Controls.Add(this.label1);
-            this.CusNewPanel.Controls.Add(this.button2);
             this.CusNewPanel.Controls.Add(this.label7);
             this.CusNewPanel.Controls.Add(this.label9);
             this.CusNewPanel.Controls.Add(this.label11);
             this.CusNewPanel.Controls.Add(this.label15);
-            this.CusNewPanel.Location = new System.Drawing.Point(12, 53);
+            this.CusNewPanel.Location = new System.Drawing.Point(351, 12);
             this.CusNewPanel.Name = "CusNewPanel";
-            this.CusNewPanel.Size = new System.Drawing.Size(444, 525);
+            this.CusNewPanel.Size = new System.Drawing.Size(364, 566);
             this.CusNewPanel.TabIndex = 3;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(61, 526);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -312,7 +291,7 @@
             // 
             this.CusNewAddress.Location = new System.Drawing.Point(86, 131);
             this.CusNewAddress.Name = "CusNewAddress";
-            this.CusNewAddress.Size = new System.Drawing.Size(329, 21);
+            this.CusNewAddress.Size = new System.Drawing.Size(255, 21);
             this.CusNewAddress.TabIndex = 18;
             // 
             // CusNewDescription
@@ -320,14 +299,25 @@
             this.CusNewDescription.Location = new System.Drawing.Point(86, 161);
             this.CusNewDescription.Multiline = true;
             this.CusNewDescription.Name = "CusNewDescription";
-            this.CusNewDescription.Size = new System.Drawing.Size(329, 347);
+            this.CusNewDescription.Size = new System.Drawing.Size(255, 247);
             this.CusNewDescription.TabIndex = 19;
+            // 
+            // CustomerList
+            // 
+            this.CustomerList.FormattingEnabled = true;
+            this.CustomerList.ItemHeight = 12;
+            this.CustomerList.Location = new System.Drawing.Point(12, 12);
+            this.CustomerList.Name = "CustomerList";
+            this.CustomerList.Size = new System.Drawing.Size(333, 568);
+            this.CustomerList.TabIndex = 4;
+            this.CustomerList.Click += new System.EventHandler(this.CustomerList_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 601);
+            this.Controls.Add(this.CustomerList);
             this.Controls.Add(this.CusNewPanel);
             this.Controls.Add(this.CusDetailPanel);
             this.Name = "Form1";
@@ -343,7 +333,6 @@
         #endregion
 
         private System.Windows.Forms.Button CreateCustomer;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel CusDetailPanel;
         private System.Windows.Forms.Label CusDescription;
         private System.Windows.Forms.Label label6;
@@ -362,11 +351,11 @@
         private System.Windows.Forms.TextBox CusNewFirstName;
         private System.Windows.Forms.TextBox CusNewLastName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ListBox CustomerList;
     }
 }
 
