@@ -26,9 +26,7 @@ namespace AnimalShelter
         //
         private void CreateCustomer_Click(object sender, EventArgs e)
         {
-            DateTime birthday = DateTime.Parse(CusNewBirthday.Text);
-
-            Customer cus = new Customer(CusNewFirstName.Text, CusNewLastName.Text, birthday)
+            Customer cus = new Customer(CusNewFirstName.Text, CusNewLastName.Text, DateTime.Parse(CusNewBirthday.Text))
             {
                 Address = CusNewAddress.Text,
                 Description = CusNewDescription.Text
@@ -57,7 +55,6 @@ namespace AnimalShelter
             CusAddress.Text = cus.Address;
             CusDescription.Text = cus.Description;
             //
-            //summary
             //입양 가능한지 글자 표시
             if (cus.IsQualified == true)
             {
@@ -67,6 +64,19 @@ namespace AnimalShelter
             {
                 CusIsQualified.Text = "입양 불가!!";
             }
+            //
+            // Environment 객체는 현재 플랫폼에 해당하는 조작을 제공
+            // Environment.NewLine 은 현재 플랫폼(윈도우)에 해당하는 줄바꿈을 제공한다!
+            CusPetInfo.Text = "";
+            foreach (Cat cat in cus.MyCats)
+            {
+                CusPetInfo.Text += $"{cat.Name} , \"{cat.MakeSound()}\"{Environment.NewLine}";
+            }
+            foreach (Dog dog in cus.MyDogs)
+            {
+                CusPetInfo.Text += $"{dog.Name} , \"{dog.MakeSound()}\"{Environment.NewLine}";
+            }
+
         }
         //
         // 셀을 클릭하면 그의 정보가 나오게 함!
@@ -98,6 +108,19 @@ namespace AnimalShelter
             CusListPanel.Dock = DockStyle.Fill;
             CusDetailPanel.Dock = DockStyle.Right;
             CusNewPanel.Dock = DockStyle.Right;
+
+            Customer cus = new Customer(firstName: "Ian", lastName: "Na", birthday: new DateTime(1957, 1, 2));
+
+            Cat cat = new Cat(petid: 1, name: "Lucas", color: "White", gender: "male");
+            cus.Adopt(cat);
+            Cat cat2 = new Cat(petid: 3, name: "Ruby", color: "Brown", gender: "female");
+            cus.Adopt(cat2);
+
+            Dog dog = new Dog(petid: 2, name: "Happy", color: "Black", gender: "Male", breed: DogBreed.Jindo);
+            cus.Adopt(dog);
+
+            Customers.Add(cus);
+            CusList.Rows.Add(cus.FirstName, cus.Age, cus.IsQualified);
         }
         //
         // 생성자 메뉴

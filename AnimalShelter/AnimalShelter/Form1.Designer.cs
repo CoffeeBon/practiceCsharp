@@ -58,6 +58,8 @@
             this.colAdoption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CusPetInfo = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.CusDetailPanel.SuspendLayout();
             this.CusNewPanel.SuspendLayout();
             this.CusListPanel.SuspendLayout();
@@ -77,6 +79,8 @@
             // 
             // CusDetailPanel
             // 
+            this.CusDetailPanel.Controls.Add(this.label10);
+            this.CusDetailPanel.Controls.Add(this.CusPetInfo);
             this.CusDetailPanel.Controls.Add(this.CusIsQualified);
             this.CusDetailPanel.Controls.Add(this.label2);
             this.CusDetailPanel.Controls.Add(this.CusDescription);
@@ -376,6 +380,29 @@
             this.toolStripMenuItem1.Text = "새 입양자";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // CusPetInfo
+            // 
+            this.CusPetInfo.AutoSize = true;
+            this.CusPetInfo.BackColor = System.Drawing.Color.Bisque;
+            this.CusPetInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.CusPetInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CusPetInfo.Font = new System.Drawing.Font("나눔고딕", 14F, System.Drawing.FontStyle.Bold);
+            this.CusPetInfo.Location = new System.Drawing.Point(126, 194);
+            this.CusPetInfo.Name = "CusPetInfo";
+            this.CusPetInfo.Size = new System.Drawing.Size(66, 23);
+            this.CusPetInfo.TabIndex = 15;
+            this.CusPetInfo.Text = "label2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("나눔고딕", 14F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(75, 194);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(39, 21);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "펫 :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -432,6 +459,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colAdoption;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label CusPetInfo;
     }
 }
 
