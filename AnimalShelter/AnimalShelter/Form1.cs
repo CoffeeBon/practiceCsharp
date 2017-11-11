@@ -19,23 +19,26 @@ namespace AnimalShelter
 
         private void CreateCustomer_Click(object sender, EventArgs e)
         {
-            DateTime birthday = new DateTime(2000, 1, 1);
-
-            Customer cus = new Customer("Ian", "Na", birthday)
+            DateTime birthday = DateTime.Parse(CusNewBirthday.Text);
+            
+            Customer cus = new Customer(CusNewFirstName.Text, CusNewLastName.Text, birthday)
             {
-                //원래는 
-                //cus.Address = "123 Wilshire Blvd.";인데, 
+                //
+                //원래는 cus.Address = "123 Wilshire Blvd.";인데, 
                 //단순화 시킬 수 있음
-                Address = "123 Wilshire Blvd."
+                Address = CusNewAddress.Text,
+                Description = CusNewDescription.Text
             };
-
-            CusFullName.Text = cus.FullName;
-            CusAge.Text = cus.Age.ToString();
+            //
             //CusAge.Text = cus.Age.ToString();
             // Age가 private이기 때문에 접근 불가!!
-
+            CusAge.Text = cus.Age.ToString();
+            CusFullName.Text = cus.FullName;
             CusAddress.Text = cus.Address;
             CusDescription.Text = cus.Description;
+            //
+            //summary
+            //입양 가능한지 글자 표시
             if (cus.IsQualified == true)
             {
                 CusIsQualified.Text = "입양 가능";
@@ -44,12 +47,6 @@ namespace AnimalShelter
             {
                 CusIsQualified.Text = "입양 불가";
             }
-            
-
-            DateTime date = new DateTime(2016, 2, 5);
-            DateTime current = DateTime.Now;
-            
-
 
         }
     }

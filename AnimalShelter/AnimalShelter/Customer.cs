@@ -14,7 +14,6 @@ namespace AnimalShelter
         public string FirstName;
         public string LastName;
 
-
         //Age와 IsQualified는 서로 연관되어 있기 때문. IsQualified에 접근 불가능하게 만든다.
         private DateTime _Birthday;
         private bool _IsQualified;
@@ -33,7 +32,10 @@ namespace AnimalShelter
             this.FirstName = firstName;
             this.LastName = lastName;
             this._Birthday = birthday;
-            this._IsQualified = (DateTime.Now.Year - birthday.Year) >= 18;
+            //
+            //DateTime.Now.Year - birthday.Year 을 Age 속성으로 바꿔줄 수 있다.
+            //this._IsQualified = (DateTime.Now.Year - birthday.Year) >= 18;
+            this._IsQualified = Age >= 18;
         }
 
 
@@ -61,25 +63,37 @@ namespace AnimalShelter
         ///    }
         ///}
         /// </summary>
-        
-            #region 속성
 
+        #region 속성
+        //
+        // public bool IsQualified { get => _IsQualified; } 위랑 동일한 식
+        // public bool IsQualified => _IsQualified;  위랑 동일한 식
         public bool IsQualified => _IsQualified;
-        // public bool IsQualified { get => _IsQualified; } 위와랑 동일한 식
-        // public bool IsQualified => _IsQualified;  위와랑 동일한 식
-
+        //
+        // get 속성으로 성과 이름을 붙임
         public string FullName => $"{FirstName} {LastName}";
-
+        //
+        // _Age 대신 Birthday 속성(DateTime type)으로 속성 생성
         public DateTime Birthday
         {
             get { return _Birthday; }
             set
             {
                 _Birthday = value;
-                _IsQualified = DateTime.Now.Year - value.Year >= 18;
+                //
+                //_IsQualified = DateTime.Now.Year - value.Year >= 18;
+                _IsQualified = Age >= 18;
             }
         }
-
+        //
+        //public int Age
+        //{
+        //    get
+        //    {
+        //        return DateTime.Now.Year - _Birthday.Year;
+        //    }
+        //}
+        // Age 속성도 필요하다!!!!
         public int Age => DateTime.Now.Year - _Birthday.Year;
 
         #endregion
