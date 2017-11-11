@@ -92,9 +92,9 @@
             this.CusDetailPanel.Controls.Add(this.CusFullName);
             this.CusDetailPanel.Controls.Add(this.label3);
             this.CusDetailPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CusDetailPanel.Location = new System.Drawing.Point(926, 48);
+            this.CusDetailPanel.Location = new System.Drawing.Point(779, 48);
             this.CusDetailPanel.Name = "CusDetailPanel";
-            this.CusDetailPanel.Size = new System.Drawing.Size(305, 553);
+            this.CusDetailPanel.Size = new System.Drawing.Size(452, 553);
             this.CusDetailPanel.TabIndex = 2;
             // 
             // CusIsQualified
@@ -225,9 +225,9 @@
             this.CusNewPanel.Controls.Add(this.label9);
             this.CusNewPanel.Controls.Add(this.label11);
             this.CusNewPanel.Controls.Add(this.label15);
-            this.CusNewPanel.Location = new System.Drawing.Point(544, 70);
+            this.CusNewPanel.Location = new System.Drawing.Point(486, 54);
             this.CusNewPanel.Name = "CusNewPanel";
-            this.CusNewPanel.Size = new System.Drawing.Size(364, 508);
+            this.CusNewPanel.Size = new System.Drawing.Size(452, 547);
             this.CusNewPanel.TabIndex = 3;
             this.CusNewPanel.Visible = false;
             // 

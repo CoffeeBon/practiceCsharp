@@ -68,13 +68,24 @@ namespace AnimalShelter
             // Environment 객체는 현재 플랫폼에 해당하는 조작을 제공
             // Environment.NewLine 은 현재 플랫폼(윈도우)에 해당하는 줄바꿈을 제공한다!
             CusPetInfo.Text = "";
-            foreach (Cat cat in cus.MyCats)
+            foreach (Pet pet in cus.Mypets)
             {
-                CusPetInfo.Text += $"{cat.Name} , \"{cat.MakeSound()}\"{Environment.NewLine}";
-            }
-            foreach (Dog dog in cus.MyDogs)
-            {
-                CusPetInfo.Text += $"{dog.Name} , \"{dog.MakeSound()}\"{Environment.NewLine}";
+                
+                CusPetInfo.Text += $"{pet.Name} , \"{pet.MakeSound()}\"";
+
+                // if pet is class of Cat, this is true! else false
+                if (pet is Cat)
+                {
+                    // Using "as" statement, Parents class can be converted with Son class 
+                    CusPetInfo.Text +=$", ({(pet as Cat).Scratch()}!!!!)";
+                }
+                else if (pet is Dog)
+                {
+                    CusPetInfo.Text += $", ({(pet as Dog).Bite()}!!!!)";
+                }
+
+                CusPetInfo.Text +=  Environment.NewLine;
+
             }
 
         }
@@ -121,6 +132,7 @@ namespace AnimalShelter
 
             Customers.Add(cus);
             CusList.Rows.Add(cus.FirstName, cus.Age, cus.IsQualified);
+
         }
         //
         // 생성자 메뉴
